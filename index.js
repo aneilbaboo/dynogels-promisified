@@ -3,11 +3,11 @@
 var Promise = require("bluebird");
 var dynogels = require("@aneilbaboo/dynogels");
 
-Promise.promisifyAll(require('dynogels/lib/table').prototype);
-Promise.promisifyAll(require('dynogels/lib/item').prototype);
-Promise.promisifyAll(require('dynogels/lib/query').prototype);
-Promise.promisifyAll(require('dynogels/lib/scan').prototype);
-Promise.promisifyAll(require('dynogels/lib/parallelScan').prototype);
+Promise.promisifyAll(require('@aneilbaboo/dynogels/lib/table').prototype);
+Promise.promisifyAll(require('@aneilbaboo/dynogels/lib/item').prototype);
+Promise.promisifyAll(require('@aneilbaboo/dynogels/lib/query').prototype);
+Promise.promisifyAll(require('@aneilbaboo/dynogels/lib/scan').prototype);
+Promise.promisifyAll(require('@aneilbaboo/dynogels/lib/parallelScan').prototype);
 
 var dynogels_model = dynogels.model;
 dynogels.model = function(name, model){
