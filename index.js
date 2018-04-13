@@ -1,7 +1,7 @@
 "use strict";
 
 var Promise = require("bluebird");
-var dynogels = require("dynogels");
+var dynogels = require("@aneilbaboo/dynogels");
 
 Promise.promisifyAll(require('dynogels/lib/table').prototype);
 Promise.promisifyAll(require('dynogels/lib/item').prototype);
